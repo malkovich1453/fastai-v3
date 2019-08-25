@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/file/d/1IRedPb5d_ikwev7TLf9-JLksLdUpy8IH/view?usp=sharing'
+export_file_url = 'https://www.googleapis.com/drive/v3/files/1IRedPb5d_ikwev7TLf9-JLksLdUpy8IH?alt=media&key=AIzaSyBVSjRwUZwXyAw7kkB1U25AwRW3u-FKmeA'
 export_file_name = 'export.pkl'
 
 classes = ['shio', 'shoyu', 'tonkotsu']
