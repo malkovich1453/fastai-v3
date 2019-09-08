@@ -1,4 +1,3 @@
-import os
 import aiohttp
 import asyncio
 import uvicorn
@@ -10,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.googleapis.com/drive/v3/files/1uWeo-2Fdapa-t9ihVvY9dwiDf_pWHjLm?alt=media&key=AIzaSyBMNuhbtuCKoYsJHwjgrsWighrugWpQwio'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1uWeo-2Fdapa-t9ihVvY9dwiDf_pWHjLm'
 export_file_name = 'exportv2.pkl'
 
 classes = ['miso', 'shio', 'shoyu', 'tonkotsu']
