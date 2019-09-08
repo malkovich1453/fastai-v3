@@ -1,4 +1,4 @@
-<html lang='en'>
+<html lang='jp'>
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
@@ -7,11 +7,13 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Ramen Checker!</div>
+    <div class='title'>ラーメンチェッカー(ver.2)</div>
     <p>
-      Use images of <strong>Shoyu</strong> ramen, <strong>Tonkotsu</strong> ramen, <strong>Shio</strong> ramen, or
-      all three!<br>Thanks to Fastai!!!
-    </p>
+      あなたがアップした画像を<strong>ラーメンＡＩ君</strong>が次の<strong>4種類</strong>(<strong>Shoyu・Tonkotsu・Shio・Miso</strong>)
+    に分類します。<br><br>
+    目の前のラーメンの種類を忘れてしまった時、数年前にあの店で食べたラーメンの味を思い出したい時にご利用ください。
+      
+      </p>
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -21,15 +23,15 @@
                accept='image/*'
                onchange='showPicked(this)'>
       </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>画像を選んでね</button>
       <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
+        <label id='upload-label'>画像が選ばれていませんよ</label>
       </div>
       <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+        <img id='image-picked' class='no-display' alt='このラーメンですね' height='200'>
       </div>
       <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>分析するよ！</button>
       </div>
       <div class='result-label'>
         <label id='result-label'></label>
