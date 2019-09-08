@@ -1,3 +1,4 @@
+import os
 import aiohttp
 import asyncio
 import uvicorn
@@ -9,7 +10,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = '/etc/secrets/pickle_from_ggl'
+export_file_url = 'os.getenv(pickle_from_ggl)'
 export_file_name = 'exportv2.pkl'
 
 classes = ['miso', 'shio', 'shoyu', 'tonkotsu']
